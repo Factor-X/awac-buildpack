@@ -14,8 +14,6 @@ APP_BUILD_DIR=$(cd $1; pwd)
 CACHE_DIR=$2
 ENV_DIR=$3
 
-echo "Entering AWAC compile step..."
-
 # Move app to a static build dir to keep paths the same between builds
 BUILD_DIR="/tmp/scala_buildpack_build_dir"
 mv $APP_BUILD_DIR $BUILD_DIR
