@@ -19,6 +19,7 @@ addons:
 
 EOF
 
+echo "Starting AWAC release application..."
 if is_play $BUILD_DIR && [ ! -f $BUILD_DIR/Procfile ] ; then
   echo "default_process_types:"
   if uses_universal_packaging $BUILD_DIR; then
