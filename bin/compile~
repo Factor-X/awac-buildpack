@@ -156,7 +156,7 @@ if is_sbt_native_packager $BUILD_DIR || is_play $BUILD_DIR; then
 fi
 
 echo "Uncompressing AWAC distribution"
-jar xf awac-1.0-SNAPSHOT.zip
+jar xf $BUILD_DIR/awac-1.0-SNAPSHOT.zip
 
 # Move compiled app back to where Heroku expects it
 mv $BUILD_DIR $APP_BUILD_DIR

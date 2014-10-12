@@ -157,6 +157,10 @@ fi
 
 echo "Uncompressing AWAC distribution"
 jar xf $BUILD_DIR/awac-1.0-SNAPSHOT.zip
+echo "Suppress AWAC zip distribution file"
+rm -r $BUILD_DIR/awac-1.0-SNAPSHOT.zip
+echo "Set executable mode to AWAC startup script"
+chmod +x $BUILD_DIR/awac-1.0-SNAPSHOT/bin/awac
 
 # Move compiled app back to where Heroku expects it
 mv $BUILD_DIR $APP_BUILD_DIR
