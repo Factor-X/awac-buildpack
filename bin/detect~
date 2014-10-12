@@ -4,9 +4,14 @@
 BIN_DIR=$(cd $(dirname $0); pwd)
 BUILD_DIR=$1
 
+echo "BIN_DIR: $BIN_DIR"
+echo "BUILD_DIR: $BUILD_DIR"
+
 . $BIN_DIR/common
 
 echo "Entering AWAC detect step..."
+
+
 
 ## SBT 0.10 allows either *.sbt in the root dir, or project/*.scala or .sbt/*.scala
 if detect_sbt $BUILD_DIR ; then
