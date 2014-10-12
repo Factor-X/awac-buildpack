@@ -164,5 +164,3 @@ chmod +x $BUILD_DIR/awac-1.0-SNAPSHOT/bin/awac
 
 # Move compiled app back to where Heroku expects it
 mv $BUILD_DIR $APP_BUILD_DIR
-
-
